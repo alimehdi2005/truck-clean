@@ -4,6 +4,8 @@ import calendar
 from datetime import datetime
 from streamlit_option_menu import option_menu
 
+You can use cwd = os.getcwd() to get the current path, and then use the full path to the config file. with open('/app/streamlit_website_joon-main/streamlit_website_joon-main/streamlit_web/config.yaml') as file: config = yaml.load(file, Loader=SafeLoader)
+
 
 def local_html(file_name):
     with open(file_name) as f:
